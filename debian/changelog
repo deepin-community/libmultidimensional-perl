@@ -1,5 +1,95 @@
-template-repository (1.0-1) unstable; urgency=medium
+libmultidimensional-perl (0.014-2) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ gregor herrmann ]
+  * debian/control: update Build-Depends for cross builds.
+  * debian/watch: use uscan version 4.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 10 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+
+  [ gregor herrmann ]
+  * Update 'DEB_BUILD_MAINT_OPTIONS = hardening=+bindnow' to '=+all'.
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints.
+    + libmultidimensional-perl: Add Multi-Arch: same.
+
+  [ gregor herrmann ]
+  * Declare compliance with Debian Policy 4.6.1.
+  * Set Rules-Requires-Root: no.
+  * Bump debhelper-compat to 13.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 14 Aug 2022 18:26:41 +0200
+
+libmultidimensional-perl (0.014-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Damyan Ivanov ]
+  * declare conformance with Policy 4.1.3 (no changes needed)
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * Import upstream version 0.014.
+  * Update (build) dependencies.
+  * Declare compliance with Debian Policy 4.1.4.
+  * Bump debhelper compatibility level to 10.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 05 May 2018 18:44:44 +0200
+
+libmultidimensional-perl (0.013-1) unstable; urgency=medium
+
+  * Import upstream version 0.013
+  * Update upstream metadata
+  * Update copyright years
+  * Add copyright paragraph for ppport.h
+  * Declare compliance with Debian Policy 4.1.1
+
+ -- Florian Schlichting <fsfs@debian.org>  Sun, 08 Oct 2017 21:28:26 +0200
+
+libmultidimensional-perl (0.012-1) unstable; urgency=low
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Florian Schlichting ]
+  * Imported Upstream version 0.011.
+  * Dropped fix_pod_typo.patch, applied upstream.
+  * Email change: Florian Schlichting -> fsfs@debian.org.
+  * Bumped Standards-Version to 3.9.4 (no change).
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+  * Fix typo in long description. Thanks to Pascal De Vuyst for the bug
+    report. (Closes: #745286)
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * Add debian/upstream/metadata.
+  * Import upstream version 0.012.
+  * Declare compliance with Debian Policy 3.9.8.
+  * Remove version constraint from libb-hooks-op-check-perl.
+    Already satisfied in oldstable.
+  * Set bindnow linker flag in debian/rules.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 02 Jul 2016 22:21:46 +0200
+
+libmultidimensional-perl (0.010-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #668105)
+
+ -- Florian Schlichting <fschlich@zedat.fu-berlin.de>  Mon, 09 Apr 2012 01:47:05 +0200
